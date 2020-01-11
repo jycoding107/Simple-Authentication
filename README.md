@@ -1,5 +1,5 @@
 # Simple-Authentication
-Asp.Net MVC Simple Authentication Full Source Code
+Asp.Net MVC Authentication Full Source Code
 
 <h2>Video Demo</h2>
 https://www.youtube.com/watch?v=1k6VTHaM_-U
