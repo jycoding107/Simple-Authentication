@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Auth Documentation</title>
+    <link href="assets/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/w3css.css" rel="stylesheet">
+    <link href="assets/customStyle.css" rel="stylesheet">
+    <script src="assets/jquery-3.3.1.js"></script>
+    <script src="assets/jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon" /> <!--browser's tab icon-->
+    <script>
+        // Toggle between showing and hiding the sidebar
+        function w3_open() {
+            if (mySidebar.style.display === 'block') {
+                $('#mySidebar').hide();
+                $('#myOverlay').hide();
+            } else {
+                $('#mySidebar').show();
+                $('#myOverlay').show();
+            }
+        }
+        // Close the sidebar with the close button
+        function w3_close() {
+            $('#mySidebar').hide();
+            $('#myOverlay').hide();
+        }
+    </script>
+</head>
+<body class="w3-light-grey">
+
+    <!-- !PAGE CONTENT! -->
+    <div class="w3-main" style="margin-left:0;margin-right:0;margin-top:30px;padding:0">
+
+        <!-- Navbar (sit on top) -->
+        <div class="w3-top">
+            <div class="w3-bar w3-black w3-card" id="myNavbar">
+                <a href="#intro" class="w3-bar-item w3-button w3-wide"><img src="assets/images/logo.png" class="img-responsive center-block logoTopNavBar" /></a>
+                <!-- Left-sided navbar links -->
+                <div class="w3-left w3-hide-small" id="navItem">
+                    <a href="#intro" class="w3-bar-item w3-button">INTRODUCTION</a>
+                    <a href="#features" class="w3-bar-item w3-button">FEATURES</a>
+                    <a href="#requirements" class="w3-bar-item w3-button"> REQUIREMENTS</a>
+                    <a href="#installation" class="w3-bar-item w3-button"> INSTALLATION</a>
+                    <a href="#getStarted" class="w3-bar-item w3-button"> GETTING STARTED</a>
+                    <a href="#codeEditing" class="w3-bar-item w3-button"> CODE EDITING</a>
+                    <a href="#contactMe" class="w3-bar-item w3-button"> CONTACT ME</a>
+                </div>
+                <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+                <a href="javascript:void(0)" class="w3-bar-item w3-button w3-left w3-hide-large w3-hide-medium" onclick="w3_open()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+        </div>
+
+        <!-- Sidebar on small screens when clicking the menu icon -->
+        <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none;z-index:3;width:200px;" id="mySidebar">
+            <a href="#intro" onclick="w3_close()" class="w3-bar-item w3-button">INTRODUCTION</a>
+            <a href="#features" onclick="w3_close()" class="w3-bar-item w3-button">FEATURES</a>
+            <a href="#requirements" onclick="w3_close()" class="w3-bar-item w3-button">REQUIREMENTS</a>
+            <a href="#installation" onclick="w3_close()" class="w3-bar-item w3-button">INSTALLATION</a>
+            <a href="#getStarted" onclick="w3_close()" class="w3-bar-item w3-button"> GETTING STARTED</a>
+            <a href="#codeEditing" onclick="w3_close()" class="w3-bar-item w3-button"> CODE EDITING</a>
+            <a href="#contactMe" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT ME</a>
+        </nav>
+
+        <!-- Overlay effect when opening sidebar on small screens -->
+        <div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+        <div class="w3-container homepageContainer" id="intro">
+		<p style="color:#8054de">Hi there! If you have any questions, suggestions, feedback, or other new project requests, 
+			feel free to contact me at
+                    <a href="mailto:jycoding@outlook.com" style="text-decoration:underline" target="_blank">jycoding@outlook.com</a> or DM me on Twitter
+                    (<a href="https://twitter.com/jycoding" target="_blank" style="text-decoration:underline">J.Y.Coding</a>) or leave a comment on 
+					<a href="https://youtu.be/1k6VTHaM_-U" target="_blank" style="text-decoration:underline">this video</a>.
+			If you like this project and need more free Asp.Net source code, like <i class="fa fa-thumbs-up"></i> 
+			<a href="https://youtu.be/1k6VTHaM_-U" target="_blank" style="text-decoration:underline">this video</a>
+			on YouTube and subscribe my 
+			<a href="https://www.youtube.com/channel/UCd5nvmCXkry-0b9YMjlbP_g" target="_blank" style="text-decoration:underline">YouTube Channel</a>, 
+			don't forget to turn on notification so that you don't miss any release of my free source code. I really appreariate it and Thank You <i class="fa fa-heart"></i>.</p>
+            <h3><b>Introduction</b></h3>
+            <!--<p>
+                <b>
+                    Hi there! Thank you for buying Asp.Net MVC 5 Simple Authentication. For any support inquiries, feel free to contact me at
+                    <a href="mailto:jycoding@outlook.com" style="text-decoration:underline" target="_blank">jycoding@outlook.com</a> or DM me on Twitter
+                    (<a href="https://twitter.com/jycoding" target="_blank" style="text-decoration:underline">J.Y.Coding</a>).
+                </b>
+            </p>-->
+            <p>
+                Asp.Net MVC 5 Simple Authentication is a web application which includes authentication fucntions such as login, sign up, view profile, edit profile, 
+				forgot password, change password, and so on. You can view the detailed features <a href="#features">here</a>. This source code enables the developers to speed up their development process by simply copying and pasting the code to 
+				their project. All the forms in the web application have a responsive design.
+                <ul>
+                    <li>
+                        Project Name: Asp.Net MVC 5 Simple Authentication
+                    </li>
+                    <li>
+                        Project Version: 1.0
+                    </li>
+                    <li>
+                        Developer: J.Y.Coding
+                    </li>
+					<li>
+						Other Projects: <a href="https://codecanyon.net/user/jycoding/portfolio" target="_blank" style="text-decoration:underline">https://codecanyon.net/user/jycoding/portfolio</a> 
+					</li>
+                    <li>
+                        Inquiries:
+                        <ol>
+                            <li>
+                                <i class="fa fa-envelope"></i> <a href="mailto:jycoding@outlook.com">jycoding@outlook.com</a>
+                            </li>
+                            <li>
+                                <i class="fa fa-twitter"></i> <a href="https://twitter.com/jycoding" target="_blank">J.Y.Coding (Ying)</a>
+                            </li>
+                        </ol>
+
+                    </li>
+					
+                </ul>
+            </p>
+        </div>
+        <div class="w3-container homepageContainer alternateContainer" id="features">
+            <h3><b>Features</b></h3>
+            <ul>
+				<li>Login</li>
+				<li>Sign Up</li>
+				<li>Email Confirmation upon Sign Up</li>
+				<li>My Profile</li>
+				<li>Forgot Password</li>
+				<li>Change Password</li>
+				<li>Edit Profile:</li>
+				<ul>
+				<li>Upon changing username and username input is validated, the user have to login again with the new username.</li>
+				<li>Upon changing email and the email input is validated, the user have to confirm the new email and re-login.</li>
+				<li>Upon changing profile picture, new image will override the old image.</li>
+				</ul>
+				<li>Upload Profile Picture:</li>
+				<ul>
+				<li>Validation on Duplication of image file name</li>
+				<li>Validation on file name (cannot contain special characters)</li>
+				</ul>
+				<li>Various Sign-Up Validations:
+				<ul>
+				<li>Check whether username already exists</li>
+				<li>Check whether email already exists</li>
+				<li>Email format validation</li>
+				<li>Username validation (minimum length 4, spacing and special characters are not allowed)</li>
+				<li>Name validation (only allow letters)</li>
+				<li>Password validation (minimum length 6)</li>
+				<li>Password and confirm password matching validation</li>
+				<li>Required fields validation</li>
+				</ul>
+				</li>
+				<li>Terms and Conditions Pop Up</li>
+				<li>Success/Error Message Alert (Alert will automatically disappear after 1.5 seconds)</li>
+				</ul>
+        </div>
+        <div class="w3-container homepageContainer" id="requirements">
+            <h3><b>Requirements</b></h3>
+            <p>
+                <ul>
+                    <li>
+                        <b>Source Code Editing Software: </b>Microsoft Visual Studio Community 2017+ (You can download <a href="https://visualstudio.microsoft.com/downloads/" target="_blank">here</a>)
+                        <ul>
+                            <li style="list-style:circle">
+                                When running the installer, during select workloads section, select <i>Asp.Net and web development</i> and <i>.NET desktop development</i>.
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <b>Gmail Account</b> (To be used to send out reset password email, you can create an account <a href="https://accounts.google.com/signup" target="_blank">here</a>)
+                    </li>
+
+                </ul>
+            </p>
+        </div>
+        <div class="w3-container homepageContainer alternateContainer" id="installation">
+            <h3><b>Installation</b> 
+			<span class="text-danger" style="font-size:large">( All the steps below are important, please read carefully and follow all 
+			the steps, if you face any problem, don't hesitate to <a href="#contactMe">contact me</a>, I am happy to provide support. )</span>
+			</h3>
+            <p>
+                <ol>              
+                    <li>
+                        Open <b>"SimpleAuthentication.sln”</b>with Microsoft Visual Studio Community, the solution file is inside Source Code folder
+                        that you downloaded from CodeCanyon
+                        <div class="row">
+                            <div class="w3-half">
+                                <img src="https://padlet-uploads.storage.googleapis.com/432143275/21b210dd9be2e5bdc8d0bd9b86b7aa59/image.png" alt="openSln" style="width:50%">
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        On Solution Explorer in Microsoft Visual Studio Community, open the root Web.config file, as shown in the image below.
+                        <div class="row">
+                            <div class="w3-half">
+                                <img src="https://padlet-uploads.storage.googleapis.com/432143275/39b8c9d218b55fbef7febfa570dd7824/image.png" alt="openWebconfig" style="width:40%;">
+                            </div>
+                        </div>
+                    </li>					
+                    <li>
+                        <b>Email Setting:</b><br />
+                        <ol style="list-style:lower-alpha">
+                            <li>
+                                To enable the system using your gmail account to send out email, click
+                                <a href="https://myaccount.google.com/lesssecureapps" target="_blank">here</a> and turn the "Allow less secure apps" ON.
+                                <div class="row">
+                                    <div class="w3-half">
+                                        <img src="https://padlet-uploads.storage.googleapis.com/400625772/95704f30ce65d0c66110a2f22f0a4a46/image.png" alt="lesssecureapps" style="width:80%;">
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                In Web.config file, Find the part of code as shown in the image below.
+                                Modify the value of <b><i>smtpUserName</i></b> , <b><i>smtpPassword</i></b>, and <b><i>websiteName</i></b> the username should be the gmail account's
+                                email address that you 'allow less secure app' just now and the password would be the
+                                password for the gmail account. As for websiteName, you can change to your website name, it would be displayed in email template as shown in image below. 
+								However, the email template can be modified, you can refer to Code Editing Section to see where to modify the email template.<br />
+                                After modifiying the value, Save the changes of the Web.config file
+                                <div class="row">
+                                    <div class="w3-half">
+                                        <img src="https://padlet-uploads.storage.googleapis.com/432143275/1eb7c21c8c7b805670fcd626b249e772/image.png" alt="webconfigemail" style="width:100%;">
+                                    </div>
+                                </div><br />
+								<div class="row">
+                                    <div class="w3-half">
+                                        <img src="https://padlet-uploads.storage.googleapis.com/432143275/a6918d6b19d18f1413f087a040d5dc78/image.png" alt="emailTemplate" style="width:80%;">
+                                    </div>
+                                </div>
+								
+                            </li>
+                        </ol>
+                    </li> 
+                    <li>
+                        Now, you can run the project by using Microsoft Visual Studio. On 'Debug' tab, click 
+						on 'Start Without Debugging' to run the project, you can also simply press Ctrl+F5 to run the project.
+						<div class="row">
+                                    <div class="w3-half">
+                                        <img src="https://padlet-uploads.storage.googleapis.com/432143275/f0da22e4beebc9aea2ddc956cb9c0210/image.png" alt="run" style="width:80%;">
+                                    </div>
+                                </div>
+						
+                    </li>
+
+                </ol>
+            </p>
+        </div>
+
+        <div class="w3-container homepageContainer" id="getStarted">
+            <h3><b>Getting Started</b></h3>
+            <ol>
+               
+                <li>
+                    You may watch the video below to see some demo of the features.
+                    <div class="row">
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/1k6VTHaM_-U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  </div>
+                </li>
+                
+            </ol>
+        </div>
+
+     
+        <div class="w3-container homepageContainer" id="codeEditing">
+            <h3><b>Code Editing</b></h3>
+            <ul>
+                <li class="well">
+                    <b>Replace browser's tab icon to your custom icon</b>
+                    <ol>
+                        <li>
+                            Prepare your icon image file in .png format
+                        </li>
+                        <li>
+                            Rename your custom icon image file to "favicon"
+                        </li>
+                        <li>
+                            On Solution Explorer, right click on SimpleAuthentication project > Add > Existing Item... > Select your favicon.png file > Replace
+                        </li>
+                    </ol>
+                    <div class="row">
+                        <div class="w3-half">
+                            <img src="https://padlet-uploads.storage.googleapis.com/432143275/071ca094b6f751f9b1b8cd5bf2b2591e/image.png" alt="editfavicon" style="width:80%;">
+                        </div>
+                    </div>
+                </li>
+				
+				<li class="well">
+                    <b>Replace logo on navigation bar</b>
+                    <ol>
+                        <li>
+                            Prepare your logo image file in .png format
+                        </li>
+                        <li>
+                            Rename your image file to "logo"
+                        </li>
+                        <li>
+                            On Solution Explorer, right click on Images folder > Add > Existing Item... > Select your logo.png file > Replace
+                        </li>
+                    </ol>  
+                </li>
+				
+                <li class="well">
+                    <b>Edit logo's width and height</b>
+                    <ol>
+                        <li>
+                            Go to CustomStyle.css inside Content folder
+                        </li>
+                        <li>
+                            Search for 'logoTopNavBar' class, you can modify the width and height so that it fit with your logo's dimension. 
+							(Tips: you can press Ctrl+F and enter logoTopNavBar to search for it quickly)
+                        </li>
+                    </ol>
+                    <div class="row">
+                        <div class="w3-half">
+                            <img src="https://padlet-uploads.storage.googleapis.com/432143275/c8bdab377fffda807ee95081ecf2159d/image.png" alt="editlogowidthheight" style="width:50%;">
+                        </div>
+                    </div>
+                </li>
+                <li class="well">
+                    <b>Edit Email Template</b>
+                    <ol>
+						<li>
+                            There are total of 3 email template used in this project. Confirm email upon sign up, Update email address confirmation, and Reset password.
+                        </li>
+                        <li>
+                            Go to Controllers/AccountController.cs
+                        </li>
+						<li>
+                            Search for <b>GetConfirmEmailTemplate</b> function if you want to edit email content for 'Confirm email upon sign up'. 
+							This is triggered when user sign up an account.
+                        </li>
+                        <li>
+                            Search for <b>GetConfirmEmailChangingTemplate</b> function if you want to edit email content for 'Update email address confirmation'. 
+							This is triggered when user change their email address in 'Edit Profile' page.
+                        </li>
+						<li>
+                            Search for <b>GetForgotPasswordEmailTemplate</b> function if you want to edit email content for 'Reset Password'.
+							This is triggered when user submit email address in 'Forgot Password' page. 
+                        </li>  
+						<li>
+                            Each function has the email subject and body which you can edit.
+							<div class="row">
+                        <div class="w3-twothird">
+                            <img src="https://padlet-uploads.storage.googleapis.com/432143275/8d8bff03c4ba41944d7eae992007c37e/image.png" alt="emailedit" style="width:100%;">
+                        </div>
+                    </div>
+                        </li>
+						
+						<li>
+                            For now, the email template for each function is as shown in the images below.
+							<ul>
+							<li><i>Confirm email upon sign up</i>
+							<div class="row">
+                        <div class="w3-half">
+                            <img src="https://padlet-uploads.storage.googleapis.com/432143275/0cfee32ab65615a2dabb79220309d5a7/image.png" alt="emailedit" style="width:80%;">
+                        </div>
+                    </div>
+							</li>
+							
+							<li><i>Confirm email when changing email address in Edit Profile page.</i>
+							<div class="row">
+                        <div class="w3-half">
+                            <img src="https://padlet-uploads.storage.googleapis.com/432143275/55708091742eca6c936af96e8d10b940/image.png" alt="emailchangeedit" style="width:80%;">
+                        </div>
+                    </div>
+							</li>
+							
+							<li><i>Reset Password.</i>
+							<div class="row">
+                        <div class="w3-half">
+                            <img src="https://padlet-uploads.storage.googleapis.com/432143275/66c9b72ecf60737fbf6c26e27bec6503/image.png" alt="resetpasswordemail" style="width:80%;">
+                        </div>
+                    </div>
+							</li>
+							
+							</ul>
+                        </li>
+						
+						
+                    </ol>
+                    
+                </li>
+                <li class="well">
+                    <b>Edit button color</b>
+                    <ol>
+                        <li>
+                            Go to Content/w3css.css
+                        </li>
+                        <li>
+                            Search for 'changed' (I have commented 'changed' for the line which you can change the button's background-color or color)
+                        </li>
+                        <li>
+                            Edit the background-color, color and so on
+                        </li>
+                    </ol>
+                    <div class="row">
+                        <div class="w3-twothird">
+                            <img src="https://padlet-uploads.storage.googleapis.com/432143275/7fbeb488b8351d2655e4faf7dceae17e/image.png" alt="editbuttoncolor" style="width:100%;">
+                        </div>
+                    </div>
+                </li>
+				
+				<li class="well">
+                    <b>Edit footer at home page</b>
+                    <ol>
+                        <li>
+                            Go to Views/Home/Index
+                        </li>
+                        <li>
+                            Search for 'footer' and edit the portion of code as shown in the image below.
+                        </li> 
+                    </ol>
+                    <div class="row">
+                        <div class="w3-half">
+                            <img src="https://padlet-uploads.storage.googleapis.com/432143275/84ef77b81753c212ce6dd1f68013cdb7/image.png" alt="footeredit" style="width:100%;">
+                        </div>
+                    </div>
+                </li>
+				
+                <li class="well">
+                    <b>Other code editing tutorials:</b>
+                    <ol>
+                        <li>
+                            <a href="https://demos.telerik.com/aspnet-mvc/" target="_blank">Kendo UI for Asp.Net MVC</a> 
+							(If you are interested in creating new Asp.Net MVC project and using Kendo UI in the new project, you can watch <a href="https://youtu.be/eIKT0dzMgFE" target="_blank">this video</a> for a tutorial.
+							The tutorial is using the Online Exam Project as an example, but the things that need to be copied to the new project are also in this Simple Authentication project.)
+                        </li>
+                        <li>
+                            <a href="https://www.w3schools.com/bootstrap/" target="_blank">Bootstrap 3</a>
+                        </li>
+                    </ol>
+                </li>
+            </ul>
+        </div>
+
+        <div class="w3-container homepageContainer alternateContainer" id="contactMe">
+            <h3><b>Contact Me</b></h3>
+			
+            <ol>
+                <li>
+                    <i class="fa fa-envelope"></i> <a href="mailto:jycoding@outlook.com">jycoding@outlook.com</a>
+                </li>
+                <li>
+                    <i class="fa fa-twitter"></i> <a href="https://twitter.com/jycoding" target="_blank">J.Y.Coding (Ying)</a>
+                </li>
+            </ol>
+        </div>
+		
+		
+
+        <!-- Footer -->
+        <footer class="w3-center w3-dark-gray w3-padding-16">
+            <a href="#intro" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+
+            <div class="w3-xlarge w3-section">
+                <a href="mailto:jycoding@outlook.com">
+                    <i class="fa fa-envelope w3-hover-opacity"></i>
+                </a>
+                <a href="https://twitter.com/jycoding" target="_blank">
+                    <i class="fa fa-twitter w3-hover-opacity"></i>
+                </a>
+            </div>
+            <p>Copyright <i class="fa fa-copyright"></i> 2020. Developed by J.Y.Coding</p>
+        </footer>
+        <!-- End page content -->
+    </div>
+
+</body>
+</html>
