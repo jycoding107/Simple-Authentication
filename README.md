@@ -55,3 +55,6 @@ to their projects. The features included are as below.</p>
 <img src="https://padlet-uploads.storage.googleapis.com/432143275/8d52b124b43efa8337bcab475d6369ec/5.png" alt="descp5" style="height:auto;max-width:100%">
 <img src="https://padlet-uploads.storage.googleapis.com/432143275/c3a393ac624fe3a824c35c3d18aaca43/6.png" alt="descp6" style="height:auto;max-width:100%">
 
+<h2>Image Credit:</h2>
+<p>All the images used in the project are from <a href="https://www.canva.com/join/maize-clocks-bangle">Canva.com</a></p>
+
